@@ -34,7 +34,7 @@
     include "process.php";
     //write the query to get data from users table
     $sql = "SELECT * FROM users";
-    $result = $conn->query($sql);
+    $result = $mysqli->query($sql);
 
 ?>
 	

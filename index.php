@@ -58,7 +58,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="" method="POST">
+                        <form action="process.php" method="POST">
                             <div class="mb-3">
                                 <label for="InputPhoto" class="form-label">Product Photo</label>
                                 <input type="text" name="productPhoto" class="form-control" id="inputPhoto" placeholder=".png" value="<?php echo $productPhoto;?>">
@@ -70,7 +70,7 @@
 
                                 <div class="mb-3">
                                     <label for="inputDescription" class="form-label">Description</label>
-                                    <input type="text" name="description" class="form-control" id="inputDescription"> value-"<?php echo $description;?>"
+                                    <input type="text" name="description" class="form-control" id="inputDescription" value ="<?php echo $description;?>">
                                 </div>
 
                                 <div class="mb-3">
@@ -145,7 +145,7 @@
 					</td>
                     
 					<td>
-                    <a href="index.php?edit=<?php echo $row['id'];?>"
+                    <a href="edit.php?edit=<?php echo $row['id'];?>"
                         class="btn btn-info">Edit</a>
                     <a href="process.php?delete=<?php echo $row['id']; ?>"
                         class="btn btn-danger">Delete</a>
