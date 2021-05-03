@@ -15,7 +15,7 @@
 
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Edit Product</a>
+            <a class="navbar-brand" href="#">Edit Task</a>
             <button type="button" class="btn btn-outline-light">Go back</button>
         </div>
     </nav>
@@ -24,38 +24,8 @@
             <input type="hidden" name="id" value="<?php echo $id;?>">
             <br>
             <div class="mb-3">
-                <label for="InputPhoto" class="form-label">Product Photo:</label>
-                <input type="text" name="productPhoto" class="form-control" id="inputPhoto" placeholder=".png" value="<?php echo $productPhoto;?>">
-
-                <div class="mb-3">
-                    <label for="inputType" class="form-label">Product Type:</label>
-                    <input type="text" name="productType" class="form-control" id="inputType" value="<?php echo $productType;?>">
-                </div>
-
-                <div class="mb-3">
-                    <label for="inputDescription" class="form-label">Description:</label>
-                    <input type="text" name="description" class="form-control" id="inputDescription" value="<?php echo $description;?>">
-                </div>
-
-                <div class="mb-3">
-                    <label for="inputOrgPrice" class="form-label">Original Price:</label>
-                    <input type="text" name="originalPrice" class="form-control" id="inputOrgPrice" value="<?php echo $originalPrice;?>">
-                </div>
-
-                <div class="mb-3">
-                    <label for="inputPrice" class="form-label">Price:</label>
-                    <input type="text" name="price" class="form-control" id="inputPrice" value="<?php echo $price;?>">
-                </div>
-
-                <div class="mb-3">
-                    <label for="inputRating" class="form-label">Rating:</label>
-                    <input type="text" name="rating" class="form-control" id="inputRating" value="<?php echo $rating;?>">
-                </div>
-
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
+                <label for="InputTask" class="form-label">Task:</label>
+                <input type="text" name="task" class="form-control" id="inputTask" placeholder="Task" value="<?php echo $task;?>">
             </div>
             <?php 
                 if ($update == true):
